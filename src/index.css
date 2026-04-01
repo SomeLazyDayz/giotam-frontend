@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+/* ===== FIX DIALOG VISIBILITY ===== */
+[data-slot="dialog-overlay"][data-state="open"] {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 99998 !important;
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+[data-slot="dialog-content"][data-state="open"] {
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  z-index: 99999 !important;
+  display: grid !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+  background: white !important;
+  border-radius: 8px !important;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3) !important;
+  max-width: 500px !important;
+  width: 90% !important;
+  max-height: 90vh !important;
+  overflow-y: auto !important;
+}
+
+/* Giữ kích thước ảnh QR đúng */
+[data-slot="dialog-content"] img {
+  max-width: 300px !important;
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* ===== STYLE NÚT QUYÊN GÓP ===== */
+button:has-text("Quyên góp"),
+[data-slot="button"]:has-text("Quyên góp") {
+  background-color: #930511 !important;
+  border-color: #930511 !important;
+  color: white !important;
+}
+
+button:has-text("Quyên góp"):hover,
+[data-slot="button"]:has-text("Quyên góp"):hover {
+  background-color: #7a0410 !important;
+  border-color: #7a0410 !important;
+}
+
+/* ===== FORCE MÀU NÚT QUYÊN GÓP ===== */
+button[type="button"]:has-text("Quyên góp") {
+  background-color: #930511 !important;
+  border-color: #930511 !important;
+  color: white !important;
+}
+
+button[type="button"]:has-text("Quyên góp"):hover {
+  background-color: #7a0410 !important;
+  border-color: #7a0410 !important;
+}
+
+/* ===== PRINT OVERRIDE ===== */
+/* Cô lập và chỉ in đúng bảng quản lý Tình nguyện viên */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-donor-table, #printable-donor-table * {
+    visibility: visible;
+  }
+  #printable-donor-table {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+  /* Bỏ nền màu xám và viền lúc in để tối ưu mực */
+  #printable-donor-table .bg-gray-50 {
+    background-color: transparent !important;
+    color: black !important;
+  }
+}
