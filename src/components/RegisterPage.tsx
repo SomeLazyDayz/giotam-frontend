@@ -27,6 +27,10 @@ export default function RegisterPage(/* Bỏ props: { onRegister, onNavigate }: 
     confirmPassword: '',
     address: '', // Thêm địa chỉ
     bloodType: 'Khác', // Mặc định để tránh lỗi validation
+    dob: '',
+    gender: 'Nam',
+    weight: '',
+    height: '',
     lastDonationDate: '',
   });
   const [showPassword, setShowPassword] = useState(false);
@@ -61,6 +65,10 @@ export default function RegisterPage(/* Bỏ props: { onRegister, onNavigate }: 
       password: formData.password,
       address: formData.address,
       bloodType: formData.bloodType,
+      dob: formData.dob,
+      gender: formData.gender,
+      weight: formData.weight,
+      height: formData.height,
       lastDonationDate: formData.lastDonationDate || null,
     };
 
@@ -149,6 +157,35 @@ export default function RegisterPage(/* Bỏ props: { onRegister, onNavigate }: 
                      </button>
                   </div>
                </div>
+
+               {/* Hàng chứa Ngày sinh và Giới tính */}
+               <div>
+                  <Label htmlFor="dob">Ngày sinh</Label>
+                  <Input id="dob" type="date" value={formData.dob} onChange={(e) => handleChange('dob', e.target.value)} required className="mt-2" max={new Date().toISOString().split('T')[0]} />
+               </div>
+               <div>
+                  <Label htmlFor="gender">Giới tính</Label>
+                  <Select value={formData.gender} onValueChange={(value) => handleChange('gender', value)} required>
+                     <SelectTrigger className="mt-2" id="gender">
+                        <SelectValue placeholder="Chọn giới tính" />
+                     </SelectTrigger>
+                     <SelectContent>
+                        <SelectItem value="Nam">Nam</SelectItem>
+                        <SelectItem value="Nữ">Nữ</SelectItem>
+                     </SelectContent>
+                  </Select>
+               </div>
+
+               {/* Hàng chứa Cân nặng và Chiều cao */}
+               <div>
+                  <Label htmlFor="weight">Cân nặng (kg)</Label>
+                  <Input id="weight" type="number" min="30" max="250" value={formData.weight} onChange={(e) => handleChange('weight', e.target.value)} required className="mt-2" placeholder="60" />
+               </div>
+               <div>
+                  <Label htmlFor="height">Chiều cao (cm)</Label>
+                  <Input id="height" type="number" min="100" max="250" value={formData.height} onChange={(e) => handleChange('height', e.target.value)} required className="mt-2" placeholder="165" />
+               </div>
+
                <div>
                   <Label htmlFor="bloodType">Nhóm máu</Label>
                    <Select value={formData.bloodType} onValueChange={handleBloodTypeChange} required> {/* Thêm required */}
