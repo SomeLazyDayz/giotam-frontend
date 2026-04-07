@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+/* ===== GLOBAL FONT - Helvetica (sans-serif, không chân) ===== */
+*, *::before, *::after {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+
 /* ===== FIX DIALOG VISIBILITY ===== */
 [data-slot="dialog-overlay"][data-state="open"] {
   position: fixed !important;
