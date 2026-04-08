@@ -43,12 +43,13 @@ export default function HospitalHome() {
   // --- State cho chức năng tạo Yêu cầu Hiến máu ---
   const [requestData, setRequestData] = useState({
     bloodType: 'O+',
-    date: new Date().toISOString().split('T')[0], // YYYY-MM-DD
+    date: new Date().toISOString().split('T')[0],
     expirationDate: new Date().toISOString().split('T')[0], 
     timeSlot: '08:00 - 09:00',
     amountMl: '350',
     urgency: 'normal',
-    donationType: 'Toàn phần'
+    donationType: 'Toàn phần',
+    note: ''
   });
   const [isCreatingRequest, setIsCreatingRequest] = useState(false);
 
@@ -69,7 +70,8 @@ export default function HospitalHome() {
         expiration_date: requestData.expirationDate,
         time_slot: requestData.timeSlot,
         status: 'open',
-        donation_type: requestData.donationType
+        donation_type: requestData.donationType,
+        note: requestData.note || null
       };
       
       const res = await api.post('/blood-requests', payload);
@@ -325,6 +327,21 @@ export default function HospitalHome() {
                   </SelectContent>
                 </Select>
               </div>
+            </div>
+
+            {/* Ghi chú thêm */}
+            <div className="space-y-2">
+              <Label htmlFor="req_note">Thông tin bổ sung (không bắt buộc)</Label>
+              <textarea
+                id="req_note"
+                rows={3}
+                value={requestData.note}
+                onChange={(e) => handleRequestChange('note', e.target.value)}
+                placeholder="Ví dụ: Địa điểm hiến máu: Tầng 2, Tòa nhà A. Gửi xe tại bãi xe miễn phí dưới chân tòa nhà. Nhớ mang theo căn cước công dân. Không nên ăn no trước khi hiến máu..."
+                className="w-full px-3 py-2 bg-white border border-gray-900 rounded-lg text-sm resize-none focus:outline-none focus:ring-2 focus:ring-[#930511]/30"
+                style={{ color: '#374151' }}
+              />
+              <p className="text-xs text-gray-400">Những thông tin này sẽ được hiển thị cho tình nguyện viên trong thông báo trên ứng dụng di động.</p>
             </div>
 
             <div className="flex justify-end pt-4 border-t">
