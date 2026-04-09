@@ -5,7 +5,7 @@ import { Button } from '../components/ui/button';
 import { Input } from '../components/ui/input';
 import { Label } from '../components/ui/label';
 import { Textarea } from '../components/ui/textarea';
-import { MapPin, Phone, Mail, Clock, Facebook, Instagram } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Facebook } from 'lucide-react';
 import { toast } from 'sonner@2.0.3';
 
 export default function ContactPage() {
@@ -55,7 +55,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-[#930511] mb-2">Địa chỉ</h3>
-                    <p>268 Lý Thường Kiệt, Phường 14, Quận 10, TP.HCM</p>
+                    <p>124 Hải Phòng, Thạch Thang, Hải Châu, Đà Nẵng</p>
                   </div>
                 </div>
               </div>
@@ -82,8 +82,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-[#930511] mb-2">Email</h3>
-                    <p>bloodgroup@gmail.com</p>
-                    <p>support@bloodplus.vn</p>
+                    <p>hethonghienmaugiotam@gmail.com</p>
                   </div>
                 </div>
               </div>
@@ -105,23 +104,16 @@ export default function ContactPage() {
               {/* Social Media */}
               <div className="bg-white rounded-lg p-6 shadow-sm">
                 <h3 className="text-[#930511] mb-4">Theo dõi chúng tôi</h3>
-                <div className="flex gap-4">
+                <div className="flex items-center gap-4">
                   <a 
-                    href="https://facebook.com" 
+                    href="https://www.facebook.com/profile.php?id=61579486566866" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="w-12 h-12 bg-[#930511] rounded-full flex items-center justify-center text-white hover:bg-[#7a0410] transition-colors"
                   >
                     <Facebook className="w-6 h-6" />
                   </a>
-                  <a 
-                    href="https://instagram.com" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="w-12 h-12 bg-[#930511] rounded-full flex items-center justify-center text-white hover:bg-[#7a0410] transition-colors"
-                  >
-                    <Instagram className="w-6 h-6" />
-                  </a>
+                  <span className="text-sm text-gray-700">Giọt Ấm - Hệ thống hiến máu thông minh</span>
                 </div>
               </div>
             </div>
@@ -207,24 +199,24 @@ export default function ContactPage() {
             <div className="bg-white rounded-lg overflow-hidden shadow-sm">
               <div className="relative w-full h-[400px]">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.566288394438!2d106.66525431533412!3d10.771376262214262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed189de803f%3A0xd8e8b1f7f3a4c5d!2s268%20L%C3%BD%20Th%C6%B0%E1%BB%9Dng%20Ki%E1%BB%87t%2C%20Ph%C6%B0%E1%BB%9Dng%2014%2C%20Qu%E1%BA%ADn%2010%2C%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh!5e0!3m2!1svi!2svn!4v1639123456789!5m2!1svi!2svn"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.1234567890!2d108.2021667!3d16.0544068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219c792252a13%3A0xf Bệnh+viẽn+Đà+Nẵng!5e0!3m2!1svi!2svn"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Vị trí GIỌT ẤM"
+                  title="Vị trí Bệnh viện Đà Nẵng"
                 ></iframe>
               </div>
               <div className="p-6 bg-[#FBF2E1]">
-                <h3 className="mb-2">268 B, Lý Thường Kiệt</h3>
+                <h3 className="mb-2">Bệnh viện Đà Nẵng</h3>
                 <p className="text-gray-700 mb-4">
-                  268 B, Lý Thường Kiệt, Phường 14,<br />
-                  Quận 10, Thành phố Hồ Chí Minh
+                  124 Hải Phòng, Thạch Thang,<br />
+                  Hải Châu, Đà Nẵng
                 </p>
                 <a
-                  href="https://www.google.com/maps/dir//268+L%C3%BD+Th%C6%B0%E1%BB%9Dng+Ki%E1%BB%87t,+Ph%C6%B0%E1%BB%9Dng+14,+Qu%E1%BA%ADn+10,+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh"
+                  href="https://www.google.com/maps/search/Bệnh+viện+Đà+Nẵng/@16.0544068,108.2021667,17z"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#930511] hover:underline inline-flex items-center gap-2"
