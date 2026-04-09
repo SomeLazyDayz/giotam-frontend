@@ -52,7 +52,7 @@ export default function Footer() {
 
           <div>
             <p className="mb-4">
-              Nêu bạn cũng đang quan tâm đến BLOOD + hãy để lại thông tin để chúng tôi liên hệ và tư vấn nhé
+              Nếu bạn cũng đang quan tâm đến GIỌT ẤM, hãy để lại thông tin để chúng tôi liên hệ và tư vấn nhé
             </p>
             <form onSubmit={handleSubmit} className="flex gap-2">
               <Input
