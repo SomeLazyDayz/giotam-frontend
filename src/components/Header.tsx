@@ -198,29 +198,29 @@ export default function Header() {
 
       {/* POPUP QUYÊN GÓP */}
       <Dialog open={isDonateOpen} onOpenChange={setIsDonateOpen}>
-        <DialogContent className="sm:max-w-sm !z-[99999] text-center">
-          <DialogHeader>
-            <DialogTitle className="text-center text-xl text-[#930511] font-bold">
+        <DialogContent className="sm:max-w-sm !z-[99999]">
+          <DialogHeader className="!text-center items-center">
+            <DialogTitle className="text-center text-xl text-[#930511] font-bold w-full">
               ❤️ Ủng hộ dự án GIỌT ẤM
             </DialogTitle>
-            <DialogDescription className="text-center text-sm text-gray-600">
+            <DialogDescription className="text-center text-sm text-gray-600 w-full">
               Quét mã QR bên dưới để quyên góp.<br />
               Chúng tôi xin chân thành cảm ơn sự hỗ trợ của bạn!
             </DialogDescription>
           </DialogHeader>
           <div className="flex flex-col items-center justify-center gap-3 py-2">
-            <div className="p-3 rounded-xl border-2 border-[#930511]/20 bg-white shadow-sm">
+            <div className="p-3 rounded-xl border-2 border-[#930511]/20 bg-white shadow-sm mx-auto">
               <img 
                 src="/qr-code.jpg"
                 alt="Mã QR Quyên góp" 
-                className="w-56 h-56 object-contain rounded-md"
+                className="w-56 h-56 object-contain rounded-md block mx-auto"
                 onLoad={() => console.log('✅ Ảnh QR đã load thành công!')}
                 onError={() => {
                   console.error('❌ Không tìm thấy /qr-code.jpg trong thư mục public');
                 }}
               />
             </div>
-            <p className="text-xs text-gray-400 italic">Mọi đóng góp dù nhỏ đều có ý nghĩa lớn 🙏</p>
+            <p className="text-xs text-gray-400 italic text-center w-full">Mọi đóng góp dù nhỏ đều có ý nghĩa lớn 🙏</p>
           </div>
         </DialogContent>
       </Dialog>
