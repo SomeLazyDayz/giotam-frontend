@@ -58,17 +58,17 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="text-center">
                 <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4"></div>
-                <h3>Nguyễn Văn A</h3>
+                <h3>Võ Nguyễn Quỳnh Trân</h3>
                 <p className="text-gray-600">Nhà sáng lập</p>
               </div>
               <div className="text-center">
                 <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4"></div>
-                <h3>Trần Thị B</h3>
+                <h3>Đoàn Nguyên Minh Tuấn</h3>
                 <p className="text-gray-600">Giám đốc công nghệ</p>
               </div>
               <div className="text-center">
                 <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4"></div>
-                <h3>Lê Văn C</h3>
+                <h3>Phạm Hoàng Phúc</h3>
                 <p className="text-gray-600">Giám đốc vận hành</p>
               </div>
             </div>
