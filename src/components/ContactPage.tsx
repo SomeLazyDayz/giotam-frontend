@@ -4,7 +4,7 @@ import { Input } from '../components/ui/input';
 import { Label } from '../components/ui/label';
 import { Textarea } from '../components/ui/textarea';
 import { Card, CardContent } from '../components/ui/card';
-import { MapPin, Phone, Mail, Send, Loader2 } from 'lucide-react';
+import { MapPin, Phone, Mail, Facebook, Send, Loader2 } from 'lucide-react';
 import { toast } from 'sonner';
 
 export default function ContactPage() {
@@ -78,7 +78,7 @@ export default function ContactPage() {
                   <MapPin className="w-6 h-6 mt-1 shrink-0" />
                   <div>
                     <p className="font-medium">Địa chỉ</p>
-                    <p className="text-white/80 text-sm">123 Đường Nguyễn Văn Linh, Quận Hải Châu, TP. Đà Nẵng</p>
+                    <p className="text-white/80 text-sm">124 Hải Phòng, Thạch Thang, Hải Châu, Đà Nẵng</p>
                   </div>
                 </div>
 
@@ -94,7 +94,22 @@ export default function ContactPage() {
                   <Mail className="w-6 h-6 mt-1 shrink-0" />
                   <div>
                     <p className="font-medium">Email</p>
-                    <p className="text-white/80 text-sm">lienhe@giotam.vn</p>
+                    <p className="text-white/80 text-sm">hethonghienmaugiotam@gmail.com</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <Facebook className="w-6 h-6 mt-1 shrink-0" />
+                  <div>
+                    <p className="font-medium">Facebook</p>
+                    <a
+                      href="https://www.facebook.com/profile.php?id=61579486566866"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white/80 text-sm hover:text-white transition-colors"
+                    >
+                      Giọt Ấm - Hệ thống hiến máu thông minh
+                    </a>
                   </div>
                 </div>
               </CardContent>

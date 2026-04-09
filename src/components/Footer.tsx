@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Mail, Phone, Facebook, Instagram } from 'lucide-react';
+import { Mail, Phone, Facebook } from 'lucide-react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { toast } from 'sonner@2.0.3';
@@ -30,7 +30,7 @@ export default function Footer() {
             <div className="space-y-2">
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                <span>bloodgroup@gmail.com</span>
+                <span>hethonghienmaugiotam@gmail.com</span>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
@@ -38,11 +38,14 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <Facebook className="w-4 h-4" />
-                <span>blood+</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Instagram className="w-4 h-4" />
-                <span>blood+</span>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61579486566866"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#930511] transition-colors"
+                >
+                  Giọt Ấm - Hệ thống hiến máu thông minh
+                </a>
               </div>
             </div>
           </div>
