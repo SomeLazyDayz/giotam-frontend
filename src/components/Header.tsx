@@ -198,27 +198,29 @@ export default function Header() {
 
       {/* POPUP QUYÊN GÓP */}
       <Dialog open={isDonateOpen} onOpenChange={setIsDonateOpen}>
-        <DialogContent className="sm:max-w-md !z-[99999]">
+        <DialogContent className="sm:max-w-sm !z-[99999] text-center">
           <DialogHeader>
-            <DialogTitle className="text-center text-2xl text-[#930511]">
-              Ủng hộ dự án GIỌT ẤM
+            <DialogTitle className="text-center text-xl text-[#930511] font-bold">
+              ❤️ Ủng hộ dự án GIỌT ẤM
             </DialogTitle>
-            <DialogDescription className="text-center">
-              Quét mã QR dưới đây để quyên góp.
-              <br />
+            <DialogDescription className="text-center text-sm text-gray-600">
+              Quét mã QR bên dưới để quyên góp.<br />
               Chúng tôi xin chân thành cảm ơn sự hỗ trợ của bạn!
             </DialogDescription>
           </DialogHeader>
-          <div className="flex items-center justify-center p-4 bg-white">
-            <img 
-              src="/qr-code.jpg"
-              alt="Mã QR Quyên góp" 
-              className="w-full max-w-[300px] h-auto rounded-md border-2 border-gray-300"
-              onLoad={() => console.log('✅ Ảnh QR đã load thành công!')}
-              onError={() => {
-                console.error('❌ Không tìm thấy /qr-code.jpg trong thư mục public');
-              }}
-            />
+          <div className="flex flex-col items-center justify-center gap-3 py-2">
+            <div className="p-3 rounded-xl border-2 border-[#930511]/20 bg-white shadow-sm">
+              <img 
+                src="/qr-code.jpg"
+                alt="Mã QR Quyên góp" 
+                className="w-56 h-56 object-contain rounded-md"
+                onLoad={() => console.log('✅ Ảnh QR đã load thành công!')}
+                onError={() => {
+                  console.error('❌ Không tìm thấy /qr-code.jpg trong thư mục public');
+                }}
+              />
+            </div>
+            <p className="text-xs text-gray-400 italic">Mọi đóng góp dù nhỏ đều có ý nghĩa lớn 🙏</p>
           </div>
         </DialogContent>
       </Dialog>
