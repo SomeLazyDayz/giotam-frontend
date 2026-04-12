@@ -152,7 +152,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="mb-4 text-2xl font-bold uppercase">Chờ thông báo</h3>
                 <p className="text-lg">
-                  Bệnh viện sẽ liên hệ với bạn qua SMS/Email khi có nhu cầu máu khẩn cấp
+                  Bệnh viện sẽ liên hệ bạn qua email và thông báo khẩn trên app
                 </p>
               </div>
               
@@ -174,16 +174,16 @@ export default function HomePage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="mb-6 text-3xl md:text-4xl font-bold uppercase tracking-wide text-white">Tình trạng thiếu máu nghiêm trọng tại TP.HCM</h2>
+                <h2 className="mb-6 text-3xl md:text-4xl font-bold uppercase tracking-wide text-white">Tình trạng thiếu máu nghiêm trọng tại Đà Nẵng</h2>
                 <p className="text-lg">
-                  TP.HCM đang đối mặt với tình trạng thiếu máu nghiêm trọng, đặc biệt trong mùa hè và các tháng cao điểm. Kho máu dự trữ hiện chỉ đáp ứng khoảng 70–80% nhu cầu điều trị, khiến nhiều bệnh viện phải kêu gọi người dân hiến máu để đáp bảo cứu các cấp cứu.
+                  Đà Nẵng đang đối mặt với tình trạng thiếu máu nghiêm trọng, đặc biệt trong mùa hè và các tháng cao điểm. Kho máu dự trữ hiện chỉ đáp ứng khoảng 70–80% nhu cầu điều trị, khiến nhiều bệnh viện phải kêu gọi người dân hiến máu để đáp bảo cứu các cấp cứu.
                 </p>
               </div>
               <div className="aspect-video bg-gray-800 rounded-lg overflow-hidden">
                 <iframe
                   width="100%"
                   height="100%"
-                  src="https://www.youtube.com/embed/kaymIKp0iM4"
+                  src="https://www.youtube.com/embed/aLIwtlaSL0E"
                   title="Video về tình trạng thiếu máu"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
