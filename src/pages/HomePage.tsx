@@ -278,56 +278,20 @@ export default function HomePage() {
             <h2 className="mb-12 text-center text-3xl md:text-4xl font-bold uppercase tracking-wide text-[#930511]">
               Bệnh viện liên kết
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <Card className="border-2 border-gray-200">
+            <div className="flex justify-center">
+              <Card className="border-2 border-gray-200 w-full max-w-sm">
                 <CardContent className="p-6">
                   <Building2 className="w-10 h-10 text-[#930511] mb-3" />
-                  <h4 className="font-bold mb-2">Bệnh viện Chợ Rẫy</h4>
-                  <p className="text-sm mb-3">201B Nguyễn Chí Thanh, Quận 5</p>
+                  <h4 className="font-bold mb-2">Bệnh viện Đà Nẵng</h4>
+                  <p className="text-sm mb-3">124 Hải Phòng, Thạch Thang, Hải Châu, Đà Nẵng</p>
                   <div className="space-y-1 text-sm">
                     <div className="flex items-center gap-2">
                       <Phone className="w-4 h-4" />
-                      <span>(028) 3855 4269</span>
+                      <span>(0236) 3821 480</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <Mail className="w-4 h-4" />
-                      <span>info@choray.vn</span>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-              
-              <Card className="border-2 border-gray-200">
-                <CardContent className="p-6">
-                  <Building2 className="w-10 h-10 text-[#930511] mb-3" />
-                  <h4 className="font-bold mb-2">Bệnh viện Nhân dân 115</h4>
-                  <p className="text-sm mb-3">527 Sư Vạn Hạnh, Quận 10</p>
-                  <div className="space-y-1 text-sm">
-                    <div className="flex items-center gap-2">
-                      <Phone className="w-4 h-4" />
-                      <span>(028) 3865 4269</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Mail className="w-4 h-4" />
-                      <span>info@bv115.vn</span>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-              
-              <Card className="border-2 border-gray-200">
-                <CardContent className="p-6">
-                  <Building2 className="w-10 h-10 text-[#930511] mb-3" />
-                  <h4 className="font-bold mb-2">Bệnh viện Từ Dũ</h4>
-                  <p className="text-sm mb-3">284 Cống Quỳnh, Quận 1</p>
-                  <div className="space-y-1 text-sm">
-                    <div className="flex items-center gap-2">
-                      <Phone className="w-4 h-4" />
-                      <span>(028) 3829 5024</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Mail className="w-4 h-4" />
-                      <span>info@tudu.vn</span>
+                      <span>hethonghienmaugiotam@gmail.com</span>
                     </div>
                   </div>
                 </CardContent>
