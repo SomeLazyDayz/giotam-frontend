@@ -300,6 +300,52 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* Download App Section */}
+        <section className="py-16 bg-gradient-to-br from-[#930511] to-[#5a0208] text-white">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="mb-4 text-3xl md:text-4xl font-bold uppercase tracking-wide">
+              Tải ứng dụng Giọt Ấm ngay!
+            </h2>
+            <p className="text-white/80 mb-10 text-lg">
+              Nhận thông báo khẩn cấp, theo dõi lịch sử hiến máu và kết nối cộng đồng — mọi lúc, mọi nơi.
+            </p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              {/* Android */}
+              <a
+                href="https://drive.google.com/file/d/1Rxl6IHbwyjQKOLdmuEK2M2LbuFiZ_n2a/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 bg-white text-[#930511] hover:bg-gray-100 transition-colors font-bold px-8 py-4 rounded-xl shadow-lg w-56 justify-center"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.523 15.341 14.63 12l2.892-3.341A1 1 0 0 0 16 7H8a1 1 0 0 0-.76 1.65L10.13 12 7.24 15.341A1 1 0 0 0 8 17h8a1 1 0 0 0 .523-1.659zM5 3a1 1 0 0 1 .707.293l14 14A1 1 0 1 1 18.293 18.707l-1.878-1.878A3 3 0 0 1 16 17H8a3 3 0 0 1-2.415-4.759L4.293 10.95A1 1 0 0 1 3 10V4a1 1 0 0 1 1-1zm14 0a1 1 0 0 1 1 1v6a1 1 0 0 1-1.293.95l-1.293-1.293A3 3 0 0 1 16 10H8c-.34 0-.668-.057-.976-.161L19 2.293A1 1 0 0 1 19 3z"/>
+                </svg>
+                <div className="text-left">
+                  <p className="text-xs font-normal leading-none">Tải về cho</p>
+                  <p className="text-base font-bold leading-tight">Android</p>
+                </div>
+              </a>
+
+              {/* iOS */}
+              <a
+                href="https://drive.google.com/file/d/1Rxl6IHbwyjQKOLdmuEK2M2LbuFiZ_n2a/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 bg-white text-[#930511] hover:bg-gray-100 transition-colors font-bold px-8 py-4 rounded-xl shadow-lg w-56 justify-center"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                </svg>
+                <div className="text-left">
+                  <p className="text-xs font-normal leading-none">Tải về cho</p>
+                  <p className="text-base font-bold leading-tight">iOS</p>
+                </div>
+              </a>
+            </div>
+            <p className="mt-6 text-white/50 text-xs italic">* Link iOS sẽ được cập nhật khi có phiên bản chính thức trên App Store.</p>
+          </div>
+        </section>
+
         {/* FAQs Section */}
         <section className="py-16">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
