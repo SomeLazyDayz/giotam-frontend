@@ -142,7 +142,7 @@ export default function RegisterPage() {
                       <SelectTrigger className="mt-2" id="bloodType">
                          <SelectValue placeholder="Chọn nhóm máu" />
                       </SelectTrigger>
-                      <SelectContent>
+                      <SelectContent className="bg-white border border-gray-200 shadow-lg">
                          <SelectItem value="O+">O+</SelectItem>
                          <SelectItem value="O-">O-</SelectItem>
                          <SelectItem value="A+">A+</SelectItem>
@@ -167,10 +167,10 @@ export default function RegisterPage() {
                      <SelectTrigger className="mt-2" id="gender">
                         <SelectValue placeholder="Chọn giới tính" />
                      </SelectTrigger>
-                     <SelectContent>
-                        <SelectItem value="Nam">Nam</SelectItem>
-                        <SelectItem value="Nữ">Nữ</SelectItem>
-                     </SelectContent>
+                      <SelectContent className="bg-white border border-gray-200 shadow-lg">
+                         <SelectItem value="Nam">Nam</SelectItem>
+                         <SelectItem value="Nữ">Nữ</SelectItem>
+                      </SelectContent>
                   </Select>
                </div>
 
