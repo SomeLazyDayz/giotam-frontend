@@ -360,6 +360,7 @@ export default function AdminDashboard({ userRole = 'admin' }: AdminDashboardPro
                       <th scope="col" className="px-6 py-4 font-bold text-center">Tổng thể tích</th>
                       <th scope="col" className="px-6 py-4 font-bold text-center">Ngày hiến gần nhất</th>
                       <th scope="col" className="px-6 py-4 font-bold text-left">Đánh giá sức khỏe</th>
+                      <th scope="col" className="px-6 py-4 font-bold text-center">Ẩn danh FB</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -386,6 +387,19 @@ export default function AdminDashboard({ userRole = 'admin' }: AdminDashboardPro
                             {donor.status.eligible ? <CheckCircle size={14} className="min-w-[14px]" /> : <Clock size={14} className="min-w-[14px]" />}
                             <span className="whitespace-nowrap overflow-hidden text-ellipsis">{donor.status.reason}</span>
                           </div>
+                        </td>
+                        <td className="px-6 py-4 text-center">
+                          {donor.donations_count === 0 ? (
+                            <span className="text-xs text-gray-400 italic">Chưa hiến</span>
+                          ) : donor.is_anonymous ? (
+                            <span className="inline-flex items-center gap-1 bg-red-50 text-red-700 border border-red-200 text-xs font-bold px-3 py-1.5 rounded-full">
+                              🔒 Ẩn danh
+                            </span>
+                          ) : (
+                            <span className="inline-flex items-center gap-1 bg-green-50 text-green-700 border border-green-200 text-xs font-bold px-3 py-1.5 rounded-full">
+                              ✅ Đăng tên
+                            </span>
+                          )}
                         </td>
                       </tr>
                     ))}
