@@ -211,9 +211,10 @@ export default function Header() {
           <div className="flex flex-col items-center justify-center gap-3 py-2 w-full text-center">
             <div className="p-3 rounded-xl border-2 border-[#930511]/20 bg-white shadow-sm inline-block mx-auto">
               <img 
-                src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=Ung_ho_du_an_Giot_Am"
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg"
                 alt="Mã QR Quyên góp" 
-                className="w-[200px] h-[200px] object-contain rounded-md block mx-auto m-0 p-0"
+                className="w-[200px] h-[200px] object-contain rounded-md block object-center"
+                style={{ margin: '0 auto', padding: 0, transform: 'translate(0, 0)' }}
               />
             </div>
             <p className="text-xs text-gray-400 italic text-center w-full mt-1">Mọi đóng góp dù nhỏ đều có ý nghĩa lớn 🙏</p>
