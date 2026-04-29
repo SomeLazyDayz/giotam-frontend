@@ -198,7 +198,7 @@ export default function Header() {
 
       {/* POPUP QUYÊN GÓP */}
       <Dialog open={isDonateOpen} onOpenChange={setIsDonateOpen}>
-        <DialogContent className="sm:max-w-sm !z-[99999]">
+        <DialogContent className="max-w-sm w-[90vw] max-h-[85vh] overflow-y-auto !z-[99999]">
           <DialogHeader className="!text-center items-center">
             <DialogTitle className="text-center text-xl text-[#930511] font-bold w-full">
               ❤️ Ủng hộ dự án GIỌT ẤM
