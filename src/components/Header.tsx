@@ -213,8 +213,8 @@ export default function Header() {
               <img 
                 src="https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg"
                 alt="Mã QR Quyên góp" 
-                className="w-[200px] h-[200px] object-contain rounded-md block object-center"
-                style={{ margin: '0 auto', padding: 0, transform: 'translate(0, 0)' }}
+                className="w-[150px] h-[150px] object-contain rounded-md block object-center"
+                style={{ margin: '0 auto', padding: 0 }}
               />
             </div>
             <p className="text-xs text-gray-400 italic text-center w-full mt-1">Mọi đóng góp dù nhỏ đều có ý nghĩa lớn 🙏</p>
