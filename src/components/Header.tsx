@@ -208,19 +208,19 @@ export default function Header() {
               Chúng tôi xin chân thành cảm ơn sự hỗ trợ của bạn!
             </DialogDescription>
           </DialogHeader>
-          <div className="flex flex-col items-center justify-center gap-3 py-2">
-            <div className="p-3 rounded-xl border-2 border-[#930511]/20 bg-white shadow-sm mx-auto">
+          <div className="flex flex-col items-center justify-center gap-3 py-2 w-full">
+            <div className="p-3 rounded-xl border-2 border-[#930511]/20 bg-white shadow-sm flex items-center justify-center w-[250px] h-[250px] mx-auto">
               <img 
-                src="/qr-code.jpg"
+                src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=Ung_ho_du_an_Giot_Am"
                 alt="Mã QR Quyên góp" 
-                className="w-56 h-56 object-contain rounded-md block mx-auto"
+                className="w-full h-full object-contain object-center rounded-md"
                 onLoad={() => console.log('✅ Ảnh QR đã load thành công!')}
                 onError={() => {
                   console.error('❌ Không tìm thấy /qr-code.jpg trong thư mục public');
                 }}
               />
             </div>
-            <p className="text-xs text-gray-400 italic text-center w-full">Mọi đóng góp dù nhỏ đều có ý nghĩa lớn 🙏</p>
+            <p className="text-xs text-gray-400 italic text-center w-full mt-1">Mọi đóng góp dù nhỏ đều có ý nghĩa lớn 🙏</p>
           </div>
         </DialogContent>
       </Dialog>
