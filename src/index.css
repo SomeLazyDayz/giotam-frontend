@@ -17,6 +17,11 @@
   visibility: visible !important;
 }
 
+[data-slot="dialog-content"] {
+  background-color: #ffffff !important;
+  color: #111111 !important;
+}
+
 
 /* ===== STYLE NÚT QUYÊN GÓP ===== */
 button:has-text("Quyên góp"),
