@@ -36,12 +36,6 @@
   overflow-y: auto !important;
 }
 
-/* Giữ kích thước ảnh QR đúng */
-[data-slot="dialog-content"] img {
-  max-width: 300px !important;
-  width: 100% !important;
-  height: auto !important;
-}
 
 /* ===== STYLE NÚT QUYÊN GÓP ===== */
 button:has-text("Quyên góp"),
